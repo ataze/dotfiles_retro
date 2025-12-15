@@ -1,0 +1,322 @@
+:root {
+	--base-color: #F3F4EF;
+	--dark-base: #e3e2de;
+
+	--vivid-gradient: qlineargradient(
+		x1: 0, y1: 0, x2: 1, y2: 0,
+		stop: 0.0 rgba(255, 0, 255, 255),
+		stop: 1.0 rgba(0, 255, 255, 255)
+	);
+
+	--internet-gradient1: qlineargradient(
+		x1: 0, y1: 0, x2: 1, y2: 0,
+		stop: 0.0 rgba(255, 255, 0, 255),
+		stop: 1.0 rgba(255, 155, 0, 255)
+	);
+
+	--internet-gradient2: qlineargradient(
+		x1: 0, y1: 0, x2: 1, y2: 0,
+		stop: 0.0 rgba(0, 255, 0, 255),
+		stop: 1.0 rgba(0, 255, 159, 255)
+	);
+
+	--weather-gradient: qlineargradient(
+		x1: 0, y1: 0, x2: 1, y2: 1,
+		stop: 0.0 #5f7fc3ff,
+		stop: 1.0 #3c5fa0ff
+	);
+}
+
+* {
+	font-size: 16px;
+	color: #000000ff;
+	font-weight: 500;
+	font-family: "Iosevka";
+	margin: 0;
+	padding: 0;
+}
+
+/* ===== BAR ===== */
+.yasb-bar {
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+	border-radius: 0px;
+}
+
+/* ===== BASE FLAT BORDER ===== */
+.widget,
+.power-menu-popup .button,
+.audio-menu,
+.traffic-menu,
+.weather-card,
+.weather-card-today,
+.weather-card-day,
+.language-menu,
+.calendar,
+.tooltip,
+.media-menu,
+.volume-slider::handle,
+.audio-container .device.selected,
+.traffic-menu .header .title,
+.traffic-menu .header .reset-button,
+.weather-card .hourly-container {
+	background: var(--base-color);
+	border-top: 2px solid #79746f;
+	border-left: 2px solid #79746f;
+	border-right: 2px solid #79746f;
+	border-bottom: 2px solid #79746f;
+}
+
+.weather-card .hourly-container {
+    min-height: 150px;
+}
+
+/* ===== WIDGET ===== */
+.widget {
+	padding: 0 10px;
+	margin: 2px;
+	background: var(--base-color);
+}
+
+.widget .label {
+	padding: 2px 2px 1px 2px;
+}
+
+.widget .label.alt {
+	padding: 1px 8px 1px 8px;
+}
+
+.clock-widget .label {
+	padding-left: 8px;
+}
+
+/* ===== WORKSPACES ===== */
+.komorebi-workspaces .ws-btn {
+	font-size: 18px;
+	background-color: transparent;
+	padding: 0 2px 0 2px;
+	color: #95a0ad;
+}
+
+.komorebi-workspaces .ws-btn.populated {
+	color: #74c7ec;
+}
+
+.komorebi-workspaces .ws-btn:hover,
+.komorebi-workspaces .ws-btn.active {
+	color: #5A504E;
+}
+
+/* ===== POWER MENU ===== */
+.uptime {
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: rgba(191, 202, 219, 0.726);
+	font-weight: 600;
+}
+
+.power-menu-widget .label {
+	color: #9c4251;
+	font-size: 16px;
+}
+
+/* ===== VOLUME ===== */
+.volume-widget .icon {
+	color: #3a69b6;
+	margin: 1px 2px 0 0;
+}
+
+.volume-slider {
+	border: none;
+}
+
+.volume-slider::groove {
+	background: rgba(0, 0, 0, 0.05);
+	height: 12px;
+}
+
+.volume-slider::sub-page {
+	background: var(--vivid-gradient);
+	margin: 2px;
+	height: 4px;
+}
+
+/* ===== AUDIO MENU ===== */
+.audio-container .device {
+	background-color: transparent;
+	border: none;
+	padding: 6px 8px 6px 4px;
+	margin: 2px 0;
+	font-size: 12px;
+}
+
+.audio-container .device:hover {
+	background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* ===== TRAFFIC MENU ===== */
+.traffic-menu {
+	padding: 8px;
+	
+}
+.traffic-menu .section-title {
+	font-size: 16px;
+	padding: 2px;
+	margin: 5px;
+	font-weight: 800;
+}
+	
+.traffic-menu .internet-info.checking {
+	background: var(--internet-gradient1);
+}
+
+.traffic-menu .internet-info.connected {
+	background: var(--dark-base);}
+
+.traffic-menu .internet-info.disconnected {
+	background: var(--dark-base);
+}
+
+/* ===== WEATHER ===== */
+.weather-widget .icon {
+	font-size: 16px;
+	margin-right: 2px;
+}
+
+.weather-card-today,
+.weather-card-day {
+	background: var(--dark-base);
+}
+
+.weather-card-day.active {
+	background: rgb(129, 126, 119);
+}
+
+.weather-card-day:hover {
+	background-color: rgba(40, 40, 60, 0.6);
+}
+
+/* ===== MEDIA ===== */
+.media-widget .label {
+	color: #000000;
+	padding-right: 4px;
+}
+
+.media-menu .title {
+	font-size: 18px;
+	font-weight: 600;
+	margin-left: 10px;
+}
+
+.media-menu .artist {
+	font-size: 13px;
+	color: #6c7086;
+	margin: 0 0 1px 10px;
+}
+
+.media-menu .btn:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.media-menu .source {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+/* ===== CALENDAR ===== */
+.calendar {
+	min-width: 480px;
+	max-width: 480px;
+}
+
+.calendar .calendar-table {
+	background: var(--base-color);
+}
+
+.calendar .calendar-table::item {
+	background: var(--base-color);
+	margin: 2px;
+}
+
+.calendar .calendar-table::item:selected {
+	background: var(--vivid-gradient);
+	color: #ffffff;
+	font-weight: 800;
+}
+
+/* ===== TOOLTIP ===== */
+.tooltip {
+	padding: 4px;
+	margin: 4px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+/* ===== ACTIVE WINDOW ===== */
+.active-window-widget {
+	background: var(--vivid-gradient);
+	border-top: 2px solid #79746f;
+	border-left: 2px solid #79746f;
+	border-right: 2px solid #79746f;
+	border-bottom: 2px solid #79746f;
+}
+
+.active-window-widget .label {
+	font-family: "Iosevka";
+	color: rgba(255, 255, 255, 255);
+	font-weight: 500;
+}
+
+.media-menu .btn {
+    color: #000000;
+    padding: 10 10px;
+    margin: 5px;
+    font-weight: 400;
+	font-size: 18px;
+}
+.komorebi-workspaces .ws-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+}
+.label {
+	line-height: 1.25;
+}
+
+.icon,
+.media-menu .btn,
+.media-widget .btn,
+.volume-widget .icon,
+.weather-widget .icon,
+.power-menu-popup .button .icon {
+	font-family: "JetBrainsMono NFP";
+	    padding: 0 4px;
+}
+
+ /* Hide media widget buttons */
+.media-widget .btn {
+    padding: 0 4px;
+
+}
+/* ===== SMALL ROUND CORNER ===== */
+.widget,
+.power-menu-popup .button,
+.audio-menu,
+.traffic-menu,
+.weather-card,
+.weather-card-today,
+.weather-card-day,
+.language-menu,
+.calendar,
+.tooltip,
+.media-menu,
+.media-menu .btn,
+.media-menu .source,
+.audio-menu,
+.traffic-menu .header .title,
+.traffic-menu .header .reset-button,
+.weather-card .hourly-container {
+	border-radius: 6px;
+}

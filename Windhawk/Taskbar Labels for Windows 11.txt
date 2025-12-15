@@ -1,0 +1,20 @@
+{
+  "mode": "labelsWithoutCombining",
+  "taskbarItemWidth": "0",
+  "runningIndicatorStyle": "left",
+  "progressIndicatorStyle": "sameAsRunningIndicatorStyle",
+  "excludedPrograms[0]": "SnippingTool.exe",
+  "minimumTaskbarItemWidth": "50",
+  "maximumTaskbarItemWidth": "180",
+  "fontSize": "12",
+  "fontFamily": "Iosevka Term",
+  "textTrimming": "characterEllipsis",
+  "leftAndRightPaddingSize": "8",
+  "spaceBetweenIconAndLabel": "8",
+  "runningIndicatorHeight": "0",
+  "runningIndicatorVerticalOffset": "0",
+  "alwaysShowThumbnailLabels": "0",
+  "labelForSingleItem": "%name%",
+  "labelForMultipleItems": "[%amount%] %name%",
+  "excludedPrograms[1]": "Notepad.exe"
+}

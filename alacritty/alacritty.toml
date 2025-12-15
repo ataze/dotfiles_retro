@@ -1,0 +1,51 @@
+[general]
+working_directory="C:\\Users\\Ahung"
+
+[terminal]
+shell = { program = "pwsh -nologo" }
+
+[window]
+dynamic_title = false
+# decorations = "None"
+opacity = 1
+  [window.padding]
+  x = 7
+  y = 7
+
+[font]
+size = 9
+[font.normal]
+  family = "IosevkaTermSlab Nerd Font Mono"
+  style = "Bold"
+
+[font.bold]
+  family = "IosevkaTermSlab Nerd Font Mono"
+  style = "ExtraBold"
+
+[font.italic]
+  family = "IosevkaTermSlab Nerd Font Mono"
+  style = "Italic"
+  
+[colors.primary]
+background = "#f2f1ee"
+foreground = "#4f4642"
+
+[colors.normal]
+black   = "#4f4642"
+red     = "#c8453f"
+green   = "#6f8f88"
+yellow  = "#b89b2e"
+blue    = "#3b6f99"
+magenta = "#d88a3a"
+cyan    = "#4fb6b0"
+white   = "#4f4642"   # ← FIX: was white, now dark
+
+[colors.bright]
+black   = "#6a5f5a"
+red     = "#ff4a45"
+green   = "#8fb5ad"
+yellow  = "#d2b23a"
+blue    = "#4d8fc4"
+magenta = "#ffab4a"
+cyan    = "#5fd1cb"
+white   = "#000000"   # ← FIX: bright white = black text
