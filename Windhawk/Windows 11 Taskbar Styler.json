@@ -184,7 +184,7 @@
   "controlStyles[49].styles[3]": "Background=#f3f4ef",
   "controlStyles[44].styles[3]": "Background:=#f3f4ef",
   "controlStyles[50].target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Border#BackgroundElement",
-  "controlStyles[50].styles[0]": "Background:=<ImageBrush Stretch=\"Uniform\" ImageSource=\"C:\\Users\\Ahung\\Documents\\RETRO\\start.png\" />",
+  "controlStyles[50].styles[0]": "Background:=<ImageBrush Stretch=\"Uniform\" ImageSource=\"https://raw.githubusercontent.com/ataze/dotfiles_retro/refs/heads/main/Windhawk/StartOrbs.png\" />",
   "controlStyles[51].target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer#Icon",
   "controlStyles[51].styles[0]": "Visibility=Collapsed"
 }

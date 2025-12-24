@@ -27,8 +27,9 @@
 
 		back
 		{
-			select = #f3f4ef
-			select-disabled = #f3f4ef
+			select = #d58c40
+			normal-disabled = #f2f1ec
+			select-disabled = #d58c40
 		}
 	}
 
@@ -52,7 +53,8 @@
 	separator
 	{
 		size = 1
-		color = #ffffff
+		color = #4f4947
+		opacity = 50
 	}
 
 	symbol
